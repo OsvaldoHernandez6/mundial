@@ -634,6 +634,23 @@
     }
     .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
+    /* ═══ FOOTER ═══ */
+    .site-footer{
+      margin-top:48px;padding:28px 0 8px;
+      border-top:1px solid var(--b);
+      text-align:center;
+    }
+    .footer-name{font-size:14px;font-weight:700;color:var(--t1);margin-bottom:10px;letter-spacing:-.2px}
+    .footer-links{display:flex;flex-direction:column;gap:6px;align-items:center}
+    .footer-link{
+      display:inline-flex;align-items:center;gap:6px;
+      font-size:12px;color:var(--t2);text-decoration:none;
+      padding:4px 10px;border-radius:var(--rpill);
+      transition:color var(--t), background var(--t);
+    }
+    .footer-link:hover{color:var(--accent);background:var(--abg)}
+    .footer-link svg{width:13px;height:13px;flex-shrink:0;opacity:.7}
+
     /* ═══════════════════════════════════
        RESPONSIVE
     ═══════════════════════════════════ */
@@ -769,6 +786,25 @@
     <div id="searchResults"><div class="search-empty">Escribe para buscar equipos, jugadores o partidos</div></div>
   </div>
 
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-name">Osvaldo Hernández</div>
+    <div class="footer-links">
+      <a class="footer-link" href="mailto:osvaldo.hernandez.o@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        osvaldo.hernandez.o@gmail.com
+      </a>
+      <a class="footer-link" href="https://adsnotdead.digital" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        adsnotdead.digital
+      </a>
+      <a class="footer-link" href="tel:+56951179298">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.28-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +56 9 5117 9298
+      </a>
+    </div>
+  </footer>
+
 </main>
 
 <script>
@@ -881,41 +917,41 @@ const MATCHES = [
     ]
   },
   // ── 12 JUN – DÍA 2 ──
-  { id:'m003', homeId:'can', awayId:'bih', homeScore:null, awayScore:null, date:'2026-06-12', time:'19:00', stadium:'BMO Field', city:'Toronto', stage:'Grupo B', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m004', homeId:'usa', awayId:'par', homeScore:null, awayScore:null, date:'2026-06-12', time:'22:00', stadium:'SoFi Stadium', city:'Los Ángeles', stage:'Grupo D', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m003', homeId:'can', awayId:'bih', homeScore:null, awayScore:null, date:'2026-06-12', time:'15:00', stadium:'BMO Field', city:'Toronto', stage:'Grupo B', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m004', homeId:'usa', awayId:'par', homeScore:null, awayScore:null, date:'2026-06-12', time:'21:00', stadium:'SoFi Stadium', city:'Los Ángeles', stage:'Grupo D', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
   // ── 13 JUN ──
   { id:'m005', homeId:'qat', awayId:'sui', homeScore:null, awayScore:null, date:'2026-06-13', time:'15:00', stadium:'Estadio Akron', city:'Guadalajara', stage:'Grupo B', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m006', homeId:'bra', awayId:'hai', homeScore:null, awayScore:null, date:'2026-06-13', time:'19:00', stadium:'AT&T Stadium', city:'Dallas', stage:'Grupo C', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m007', homeId:'aus', awayId:'tur', homeScore:null, awayScore:null, date:'2026-06-13', time:'22:00', stadium:"Levi's Stadium", city:'San José', stage:'Grupo D', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m006', homeId:'bra', awayId:'hai', homeScore:null, awayScore:null, date:'2026-06-13', time:'18:00', stadium:'AT&T Stadium', city:'Dallas', stage:'Grupo C', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m007', homeId:'aus', awayId:'tur', homeScore:null, awayScore:null, date:'2026-06-13', time:'00:00', stadium:"Levi's Stadium", city:'San José', stage:'Grupo D', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
   // ── 14 JUN ──
-  { id:'m008', homeId:'mar', awayId:'sco', homeScore:null, awayScore:null, date:'2026-06-14', time:'12:00', stadium:'Mercedes-Benz Stadium', city:'Atlanta', stage:'Grupo C', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m009', homeId:'ger', awayId:'cur', homeScore:null, awayScore:null, date:'2026-06-14', time:'15:00', stadium:'Rose Bowl', city:'Los Ángeles', stage:'Grupo E', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m008', homeId:'mar', awayId:'sco', homeScore:null, awayScore:null, date:'2026-06-14', time:'13:00', stadium:'Mercedes-Benz Stadium', city:'Atlanta', stage:'Grupo C', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m009', homeId:'ger', awayId:'cur', homeScore:null, awayScore:null, date:'2026-06-14', time:'16:00', stadium:'Rose Bowl', city:'Los Ángeles', stage:'Grupo E', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
   { id:'m010', homeId:'ned', awayId:'swe', homeScore:null, awayScore:null, date:'2026-06-14', time:'19:00', stadium:'Hard Rock Stadium', city:'Miami', stage:'Grupo F', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
   { id:'m011', homeId:'bel', awayId:'nzl', homeScore:null, awayScore:null, date:'2026-06-14', time:'22:00', stadium:'MetLife Stadium', city:'Nueva York', stage:'Grupo G', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
   // ── 15 JUN ──
-  { id:'m012', homeId:'esp', awayId:'cpv', homeScore:null, awayScore:null, date:'2026-06-15', time:'15:00', stadium:'SoFi Stadium', city:'Los Ángeles', stage:'Grupo H', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m013', homeId:'civ', awayId:'ecu', homeScore:null, awayScore:null, date:'2026-06-15', time:'19:00', stadium:'BC Place', city:'Vancouver', stage:'Grupo E', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m014', homeId:'fra', awayId:'irq', homeScore:null, awayScore:null, date:'2026-06-15', time:'22:00', stadium:'Gillette Stadium', city:'Boston', stage:'Grupo I', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m012', homeId:'esp', awayId:'cpv', homeScore:null, awayScore:null, date:'2026-06-15', time:'12:00', stadium:'SoFi Stadium', city:'Los Ángeles', stage:'Grupo H', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m013', homeId:'civ', awayId:'ecu', homeScore:null, awayScore:null, date:'2026-06-15', time:'18:00', stadium:'BC Place', city:'Vancouver', stage:'Grupo E', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m014', homeId:'fra', awayId:'irq', homeScore:null, awayScore:null, date:'2026-06-15', time:'21:00', stadium:'Gillette Stadium', city:'Boston', stage:'Grupo I', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
   // ── 16 JUN ──
-  { id:'m015', homeId:'jpn', awayId:'tun', homeScore:null, awayScore:null, date:'2026-06-16', time:'12:00', stadium:'AT&T Stadium', city:'Dallas', stage:'Grupo F', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m016', homeId:'arg', awayId:'alg', homeScore:null, awayScore:null, date:'2026-06-16', time:'15:00', stadium:'MetLife Stadium', city:'Nueva York', stage:'Grupo J', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m017', homeId:'egy', awayId:'irn', homeScore:null, awayScore:null, date:'2026-06-16', time:'19:00', stadium:'Allegiant Stadium', city:'Las Vegas', stage:'Grupo G', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m018', homeId:'nor', awayId:'sen', homeScore:null, awayScore:null, date:'2026-06-16', time:'22:00', stadium:"Levi's Stadium", city:'San José', stage:'Grupo I', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m015', homeId:'jpn', awayId:'tun', homeScore:null, awayScore:null, date:'2026-06-16', time:'15:00', stadium:'AT&T Stadium', city:'Dallas', stage:'Grupo F', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m016', homeId:'arg', awayId:'alg', homeScore:null, awayScore:null, date:'2026-06-16', time:'18:00', stadium:'MetLife Stadium', city:'Nueva York', stage:'Grupo J', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m017', homeId:'egy', awayId:'irn', homeScore:null, awayScore:null, date:'2026-06-16', time:'21:00', stadium:'Allegiant Stadium', city:'Las Vegas', stage:'Grupo G', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m018', homeId:'nor', awayId:'sen', homeScore:null, awayScore:null, date:'2026-06-16', time:'00:00', stadium:"Levi's Stadium", city:'San José', stage:'Grupo I', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
   // ── 17 JUN ──
-  { id:'m019', homeId:'por', awayId:'uzb', homeScore:null, awayScore:null, date:'2026-06-17', time:'12:00', stadium:'Mercedes-Benz Stadium', city:'Atlanta', stage:'Grupo K', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m020', homeId:'ksa', awayId:'uru', homeScore:null, awayScore:null, date:'2026-06-17', time:'15:00', stadium:'Rose Bowl', city:'Los Ángeles', stage:'Grupo H', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m019', homeId:'por', awayId:'uzb', homeScore:null, awayScore:null, date:'2026-06-17', time:'13:00', stadium:'Mercedes-Benz Stadium', city:'Atlanta', stage:'Grupo K', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m020', homeId:'ksa', awayId:'uru', homeScore:null, awayScore:null, date:'2026-06-17', time:'16:00', stadium:'Rose Bowl', city:'Los Ángeles', stage:'Grupo H', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
   { id:'m021', homeId:'aut', awayId:'jor', homeScore:null, awayScore:null, date:'2026-06-17', time:'19:00', stadium:'BC Place', city:'Vancouver', stage:'Grupo J', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
   { id:'m022', homeId:'eng', awayId:'pan', homeScore:null, awayScore:null, date:'2026-06-17', time:'22:00', stadium:'Hard Rock Stadium', city:'Miami', stage:'Grupo L', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
   // ── 18 JUN ──
   { id:'m023', homeId:'col', awayId:'cod', homeScore:null, awayScore:null, date:'2026-06-18', time:'12:00', stadium:'Gillette Stadium', city:'Boston', stage:'Grupo K', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
   { id:'m024', homeId:'cro', awayId:'gha', homeScore:null, awayScore:null, date:'2026-06-18', time:'15:00', stadium:'Allegiant Stadium', city:'Las Vegas', stage:'Grupo L', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m025', homeId:'mex', awayId:'kor', homeScore:null, awayScore:null, date:'2026-06-18', time:'19:00', stadium:'SoFi Stadium', city:'Los Ángeles', stage:'Grupo A', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m026', homeId:'cze', awayId:'rsa', homeScore:null, awayScore:null, date:'2026-06-18', time:'22:00', stadium:'Estadio Azteca', city:'Ciudad de México', stage:'Grupo A', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m025', homeId:'mex', awayId:'kor', homeScore:null, awayScore:null, date:'2026-06-18', time:'18:00', stadium:'SoFi Stadium', city:'Los Ángeles', stage:'Grupo A', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m026', homeId:'cze', awayId:'rsa', homeScore:null, awayScore:null, date:'2026-06-18', time:'21:00', stadium:'Estadio Azteca', city:'Ciudad de México', stage:'Grupo A', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
   // ── 19 JUN ──
-  { id:'m027', homeId:'sui', awayId:'bih', homeScore:null, awayScore:null, date:'2026-06-19', time:'12:00', stadium:'BMO Field', city:'Toronto', stage:'Grupo B', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m028', homeId:'can', awayId:'qat', homeScore:null, awayScore:null, date:'2026-06-19', time:'15:00', stadium:'BC Place', city:'Vancouver', stage:'Grupo B', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m029', homeId:'usa', awayId:'tur', homeScore:null, awayScore:null, date:'2026-06-19', time:'19:00', stadium:"Levi's Stadium", city:'San José', stage:'Grupo D', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
-  { id:'m030', homeId:'par', awayId:'aus', homeScore:null, awayScore:null, date:'2026-06-19', time:'22:00', stadium:'AT&T Stadium', city:'Dallas', stage:'Grupo D', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m027', homeId:'sui', awayId:'bih', homeScore:null, awayScore:null, date:'2026-06-19', time:'15:00', stadium:'BMO Field', city:'Toronto', stage:'Grupo B', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m028', homeId:'can', awayId:'qat', homeScore:null, awayScore:null, date:'2026-06-19', time:'18:00', stadium:'BC Place', city:'Vancouver', stage:'Grupo B', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m029', homeId:'usa', awayId:'tur', homeScore:null, awayScore:null, date:'2026-06-19', time:'21:00', stadium:"Levi's Stadium", city:'San José', stage:'Grupo D', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
+  { id:'m030', homeId:'par', awayId:'aus', homeScore:null, awayScore:null, date:'2026-06-19', time:'23:00', stadium:'AT&T Stadium', city:'Dallas', stage:'Grupo D', status:'upcoming', goals:[], cards:[], stats:null, summary:null, videos:[] },
 ];
 
 // ══════════════════════════════════════════════
